@@ -12,7 +12,8 @@ const { postForm } = require("../Controllers/contacto.controller")
 const upload=multer()
 
 
-Route.use(cors(),morgan('dev'))
+Route.use(cors())
+Route.use(morgan('dev'))
 Route.get('/',(req,res)=>{
 
 
