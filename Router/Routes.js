@@ -6,7 +6,7 @@ const multer=require("multer")
 
 
 
-const { postForm } = require("../Controllers/contacto.controller")
+const { postForm } = require("../Controllers/contacto.controller.js")
 
 
 const upload=multer()
