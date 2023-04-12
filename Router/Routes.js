@@ -11,8 +11,11 @@ const { postForm } = require("../Controllers/contacto.controller")
 
 const upload=multer()
 
-
-Route.use(cors())
+const corsConfig = {
+    credentials: true,
+    origin: true,
+};
+Route.use(cors(corsConfig))
 Route.use(morgan('dev'))
 Route.get('/',(req,res)=>{
 
