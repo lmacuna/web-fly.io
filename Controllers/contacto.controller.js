@@ -30,7 +30,8 @@ const postForm=(req,res)=>{
 
         enviarMail() */
         //console.log(req.body)
-       data=`hola ${nombre}! He recibido satisfactoriamente tu mensaje, en breve me comunico contigo` 
+    /*    data=`hola ${nombre}! He recibido satisfactoriamente tu mensaje, en breve me comunico contigo`  */
+    data=req.body
        return res.json({"data":data})
         
     } catch (error) {
