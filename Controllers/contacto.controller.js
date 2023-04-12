@@ -3,7 +3,7 @@ const postForm=(req,res)=>{
     try {
         
         var {nombre,email,asunto,mensaje}=req.body
-       /*  const enviarMail = async () => {
+        const enviarMail = async () => {
             const config = {
                 host: 'smtp.gmail.com',
                 port: 465,
@@ -28,7 +28,7 @@ const postForm=(req,res)=>{
             //console.log(info)
         }
 
-        enviarMail() */
+        enviarMail()
         //console.log(req.body)
        data=`hola ${nombre}! He recibido satisfactoriamente tu mensaje, en breve me comunico contigo` 
        return res.json({"data":data})
