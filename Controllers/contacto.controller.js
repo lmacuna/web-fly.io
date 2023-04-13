@@ -7,16 +7,17 @@ const postForm=(req,res)=>{
             const config = {
                 host: 'smtp.gmail.com',
                 port: 465,
-                secure: false,
+                secure: true,
+               
 
                 auth: {
                     user: 'lucasmacuna@gmail.com',
                     pass: 'iccjxonsdzgzpqyt'
 
                 },
-                tls:{
+               /*  tls:{
                     rejectUnauthorized:false
-                }
+                } */
             }
 
             const mensa = {
