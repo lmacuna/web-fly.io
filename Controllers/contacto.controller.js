@@ -33,7 +33,7 @@ const postForm=(req,res)=>{
             const transport = nodemailer.createTransport(config)
             const info = await transport.sendMail(mensa)
             //console.log(info)
-            data=`hola ${nombre}! He recibido satisfactoriamente tu mensaje, en breve me comunico contigo \n info: ${info}` 
+            data=`hola ${nombre}! He recibido satisfactoriamente tu mensaje, en breve me comunico contigo` 
             //data=req.body
                return res.json({"data":data})
         }
