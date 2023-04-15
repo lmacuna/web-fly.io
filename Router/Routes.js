@@ -30,7 +30,7 @@ Route.get('/',(req,res)=>{
 })
 
 
-Route.post('/contact',upload.any(),postForm)
+Route.post('/contacto',upload.any(),postForm)
 
 
 module.exports=Route;
