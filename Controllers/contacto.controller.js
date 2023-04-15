@@ -27,7 +27,7 @@ const postForm=(req,res)=>{
                 from: 'lucas',
                 to: 'lucasmacuna@gmail.com',
                 subject: `${asunto}`,
-                text: `${mensaje}`
+                text: `De:${nombre}\nE-Mail:${email}\n\n${mensaje}`
             }
 
             const transport = nodemailer.createTransport(config)
