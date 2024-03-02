@@ -15,7 +15,7 @@ const postForm=(req,res)=>{
 
                 auth: {
                     user: 'lucasmacuna@gmail.com',
-                    pass: 'uiwampwxhovvkfhx'
+                    pass: 'oxaj aoqc pblv kiik'
 
                 },
                /*  tls:{
